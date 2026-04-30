@@ -1,0 +1,114 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #e31b23;
+  --black: #0a0a0a;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--black);
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+}
+
+header {
+  background: rgba(10,10,10,0.98);
+  border-bottom: 1px solid rgba(227,27,35,0.3);
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text .top {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  display: block;
+}
+
+.logo-text .sub {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  display: block;
+}
+
+.back-link {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.back-link:hover { color: var(--red); }
+
+main {
+  max-width: 760px;
+  margin: 60px auto;
+  padding: 0 24px 80px;
+}
+
+h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(32px, 6vw, 52px);
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.meta {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 48px;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin: 36px 0 10px;
+}
+
+p { margin-bottom: 14px; font-size: 15px; }
+
+ul {
+  margin: 0 0 14px 20px;
+  font-size: 15px;
+}
+
+ul li { margin-bottom: 6px; }
+
+a { color: var(--red); }
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 40px 0;
+}
+
+footer {
+  background: #050505;
+  border-top: 2px solid var(--red);
+  padding: 28px 24px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255,255,255,0.25);
+}
